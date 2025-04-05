@@ -92,9 +92,25 @@ const AudioRecorder: React.FC = () => {
   
     setConvertedURL(URL.createObjectURL(rawBlob));
   };
-
+  const handleSend = () => {
+    console.log("Send button clicked!");
+  };
   return (
-    <div style={{ textAlign: "center", padding: "20px", color: "#000" }}>
+    <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "20px",
+    color: "#fff",
+    backgroundColor: "#121212",
+    borderRadius: "10px",
+    boxShadow: "0 0 20px rgba(0, 0, 0, 0.4)",
+    width: "90%",
+    maxWidth: "500px",
+  }}
+>
       <h1>🎙️ Audio Recorder</h1>
       <button onClick={recording ? stopRecording : startRecording}>
         {recording ? "⏹️ Stop Recording" : "🎤 Start Recording"}
@@ -105,7 +121,12 @@ const AudioRecorder: React.FC = () => {
           <h3>▶️ Recorded Audio</h3>
           <audio src={audioURL} controls />
           <br />
-          <button onClick={convertAudio}>🎛️ Convert to RAW PCM</button>
+          
+          <button onClick={() => console.log("Send button clicked!")} 
+          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 mt-4"
+       >
+  Send
+</button>
         </>
       )}
 
