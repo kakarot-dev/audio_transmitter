@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ffmpeg/ffmpeg": "^0.12.15",
-    "@ffmpeg/util": "^0.12.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tar": "^7.4.3"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "tar": "^7.4.3",
     "@eslint/js": "^9.21.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -28,5 +26,18 @@
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakarot-dev/audio_transmitter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakarot-dev/audio_transmitter/issues"
+  },
+  "homepage": "https://github.com/kakarot-dev/audio_transmitter#readme"
 }
